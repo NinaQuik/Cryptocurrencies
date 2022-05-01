@@ -14,6 +14,10 @@ The following steps were taken during the analysis:
 ## Results
 After removing null values, filtering the data for only mined cryptocurrencies, and using get_dummies() to create variables for text features, the cleaned data yielded 532 tradable cryptocurrencies.
 
+However, there are a large number of variables, so PCA was to reduce dimensions to three principal components (PC1, PC2, PC3).
+
+![ClusteredPCA](Resources/Clustered_Df.png)
+
 The next step is determining how many clusters should be used in the analysis.  An elbow curve shows that the sharp decrease in inertia tapers off around 4.  Therefore K=4 was used in the model.
 
 ![ElbowCurve](/Resources/ElbowCurve.png)
@@ -21,6 +25,7 @@ The next step is determining how many clusters should be used in the analysis.  
 The K-means algorithm is then used to cluster the cryptocurrencies.
 
 ### Table of Cryptocurrencies 
+Cryptocurrencies are clustered into one of four classes (0-3).
 ![TradableTable](Resources/tradableTable.png)
 
 ### Scaled DataFrame 
