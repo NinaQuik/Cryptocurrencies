@@ -29,13 +29,16 @@ Cryptocurrencies are clustered into one of four classes (0-3).
 ![TradableTable](Resources/tradableTable.png)
 
 ### Scaled DataFrame 
-MinMaxScaler method is used to scale the TotalCoinSupply and TotalCoinsMined columns
+MinMaxScaler method is used to scale the TotalCoinSupply and TotalCoinsMined columns.
 ![Scaled](Resources/plot_df.png)
 
 ### 2D Scatter Plot for TotalCoinSupply and TotalCoinsMined
-An hvplot scatter plot is then rendered to visualize the information
+An hvplot scatter plot is then rendered to visualize the information.
 ![2dscatter](Resources/2DScatter.png)
 
 ### 3D Scatter Plot
 A 3D hvplot scatter plot clearly displays the four clusters distributed across the three principal components.
 ![3dscatter](Resources/3DScatter.png)
+
+## Summary
+Unsupervised learning using K-Means provides a mechanism to group similar types of cryptocurrencies into a classification system that has a potential for other uses. Interestingly in this example, BitTorrent is in a class by itself and an outlier mainly due to the sheer volume of coins mined.
